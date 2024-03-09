@@ -13,7 +13,7 @@ actionsToolkit.run(
   // main
   async () => {
     const input: context.Inputs = context.getInputs();
-    const runDir = path.join(os.homedir(), `setup-docker-action-${uuid.v4()}`);
+    const runDir = path.join(os.homedir(), `sda-${uuid.v4()}`);
 
     if (input.context == 'default') {
       throw new Error(`'default' context cannot be used.`);
